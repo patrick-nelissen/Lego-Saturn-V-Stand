@@ -21,8 +21,8 @@ Relevant 3D printing files are on https://www.printables.com/
 1. Pi Pico case: https://www.printables.com/model/226610-raspberry-pi-pico-case
 2. Flames, LED holder and Pi Pico Case Wire Feed-through: https://www.printables.com/model/459757-lego-saturn-v-rocket-flames-stand
 
-### Schematic
-
+### Wiring
+Wiring as in schematic.pdf
 
 ### Miscellaneous
 
