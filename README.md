@@ -1,6 +1,8 @@
 # Lego-Saturn-V---Stand
 Printed rocket engine exhaust flames with Pi Pico W modulated LEDs that function as stand.
 
+![alt text](https://github.com/patrick-nelissen/Lego-Saturn-V---Stand/tree/main/pictures/EngineInDark.jpg?raw-true)
+
 ## ABOUT
 This microPython application runs on a Raspberry Pi Pico W (RP2040) and modulates LEDs in a set of 3D printed rocket exhaust flames that act as a stand for the Lego Saturn V rocket.
 The code consists of a threaded application, which runs a simple webservice on core0, and LED modulation on core1.
