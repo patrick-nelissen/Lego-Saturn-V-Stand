@@ -67,7 +67,7 @@ def core0_thread():
 
     wlan = network.WLAN(network.STA_IF)
     wlan.active(True)
-    wlan.connect("your_SSID","your_PASSWORD")
+    wlan.connect("ssid","password")
          
     # Wait for connect or fail
     wait = 10
@@ -98,6 +98,8 @@ def core0_thread():
 # This core, core 1 will drive the LEDs and randomly
 # change the brightness of each of the 5 engines
 def core1_thread():
+
+    global EngineOn
 
     Engine1 = EngineLED(9)
     Engine2 = EngineLED(10)
