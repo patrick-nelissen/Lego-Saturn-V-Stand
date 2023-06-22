@@ -59,8 +59,6 @@ def open_socket(ip):
     print(connection)
     return(connection)
 
-
-
 # The Pi Pico has 2 cores, core 0 and core 1
 # This core, core 0 will run the webservice
 def core0_thread():
