@@ -27,6 +27,9 @@ def webpage():
     return html
  
 def serve(connection):
+
+    global EngineOn
+
     while True:
         client = connection.accept()[0]
         request = client.recv(1024)
