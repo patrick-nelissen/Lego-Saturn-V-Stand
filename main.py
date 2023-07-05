@@ -11,14 +11,16 @@ from EngineLED import EngineLED
 def webpage():
     html = f"""
             <!DOCTYPE html>
-            <html>          
+            <html>
             <body>
+            <br><br><br><br>
             <form action="./on">
-            <input type="submit" value="Engine On"/>
+            <input type="submit" value="Engine On" style="font-size:40px; font-weight:bold; height:60px; width:220px; color:red;"/>
             </form>
+            <br><br><br><br>
             </form>
             <form action="./off">
-            <input type="submit" value="Engine Off" />
+            <input type="submit" value="Engine Off" style="font-size:40px; font-weight:bold; height:60px; width:220px; color:green;"/>
             </form>
             </body>
             </html>
@@ -46,6 +48,7 @@ def serve(connection):
         elif request == '/off?':
             EngineOn = False      
   
+        print("EngineOn: ", EngineOn)
         html=webpage()
         client.send(html)
         client.close()
@@ -67,7 +70,7 @@ def core0_thread():
 
     wlan = network.WLAN(network.STA_IF)
     wlan.active(True)
-    wlan.connect("ssid","password")
+    wlan.connect("Your_SSID","Your_Password")
          
     # Wait for connect or fail
     wait = 10
